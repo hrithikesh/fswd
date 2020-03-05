@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a href="#home" class="mudra-button mudra-bar-item">Home</a>
+        <a href="#Login" class="mudra-button mudra-bar-item">Login</a>
+        <a href="#About us" class="mudra-button mudra-bar-item">About us</a>
+        <a href="#Support" class="mudra-button mudra-bar-item">Support</a>
+      </nav>
+      <section><!--Change this-->
+        <img class="mySlides" src="C:\Users\Hrithikesh sankineni\Desktop\fswd\img folder\d1.jfif" style="width:50%">
+        <img class="mySlides" src="C:\Users\Hrithikesh sankineni\Desktop\fswd\img folder\d2.jfif" style="width:50%">
+      </section>
+      <section class="mudra-container mudra-center mudra-content" style="max-width:600px">
+        <h2 class="mudra-wide">MUDRA</h2>
+        <p class="mudra-opacity"><i>We love dance</i></p>
+      </section>
+      <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+      </script>
+        <footer class="mudra-container mudra-padding-64 mudra-center mudra-black mudra-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+
+</footer>
+        
+</body>
+</html>
